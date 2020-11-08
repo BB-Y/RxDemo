@@ -95,6 +95,22 @@ class NetworkService {
                     .delay(.seconds(2), scheduler: MainScheduler.instance)
                      .asDriver(onErrorDriveWith: Driver.empty())
       }
+    func getRandomResults(page: Int) -> Driver<([String], Bool)> {
+        print("正在请求数据......")
+               let items = (0 ..< 20).map {_ in
+                   "随机数据\(Int(arc4random()))"
+               }
+        let hasMore: Bool
+        if page > 0 {
+            hasMore = false
+        } else {
+            hasMore = true
+        }
+       let observable = Observable.just((items, hasMore))
+       return observable
+          .delay(.seconds(2), scheduler: MainScheduler.instance)
+           .asDriver(onErrorDriveWith: Driver.empty())
+    }
 }
 
 extension Reactive where Base: UIScrollView {
@@ -139,8 +155,8 @@ extension Reactive where Base: ESRefreshComponent {
     
     //停止刷新
     var endRefreshing: Binder<Bool> {
-        return Binder(base) { refresh, isEnd in
-            if isEnd {
+        return Binder(base) { refresh, hasMore in
+            if hasMore {
                 refresh.stopRefreshing()
             }
         }

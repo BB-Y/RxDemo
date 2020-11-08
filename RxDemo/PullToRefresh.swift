@@ -23,7 +23,7 @@ class PullToRefreshVC: UIViewController {
                                                        footerRefresh: tableView.rx.loadMore.asDriver()),
                                                dependency: (disposeBag: disposeBag,
                                                             networkService: NetworkService()))
-        viewModel.tableData.asDriver()
+        viewModel.tableData!.asDriver()
             .drive(tableView.rx.items) { (tableView, row, element) in
                 let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
                 cell.textLabel?.text = "\(row+1)、\(element)"
@@ -33,17 +33,18 @@ class PullToRefreshVC: UIViewController {
                 
                
         //上拉刷新状态结束的绑定
-        viewModel.endHeaderRefreshing
+        viewModel.endHeaderRefreshing!
             .drive(self.tableView.rx.endRefreshing)
             .disposed(by: disposeBag)
         
-        viewModel.endFooterRefreshing
+        viewModel.endFooterRefreshing!
         .drive(self.tableView.rx.stopLoadMore)
         .disposed(by: disposeBag)
         
-        viewModel.noMoreData
+        viewModel.hasMore!.asDriver()
             .drive(tableView.rx.noticeNoMoreData)
             .disposed(by: disposeBag)
+      
         
     }
         
@@ -56,16 +57,19 @@ class PullToRefreshViewModel {
     
     //ViewModel Output
     //表格数据序列
-    let tableData = BehaviorRelay<[String]>(value: [])
+    let tableData: BehaviorRelay<[String]>? = BehaviorRelay<[String]>(value: [])
      
     //停止头部刷新状态
-    let endHeaderRefreshing: Driver<Bool>
+    let endHeaderRefreshing: Driver<Bool>?
      
     //停止尾部刷新状态
-    var endFooterRefreshing: Driver<Bool>
+    var endFooterRefreshing: Driver<Bool>?
     
-    let noMoreData: Driver<Bool>
+    let hasMore: BehaviorRelay<Bool>? = BehaviorRelay<Bool>(value: true)
 
+    //let page = BehaviorRelay<Int>(value: 0)
+    static var page = 0
+    
      
     //ViewModel初始化（根据输入实现对应的输出）
     init(input: (
@@ -74,38 +78,46 @@ class PullToRefreshViewModel {
          dependency: (
             disposeBag:DisposeBag,
             networkService: NetworkService )) {
+        
+        //上拉结果 返回数据和是否还有更多
+               let footerRefreshData = input.footerRefresh.flatMapLatest{() -> Driver<([String], Bool)> in
+                   PullToRefreshViewModel.page += 1
+                   return dependency.networkService.getRandomResults(page: PullToRefreshViewModel.page)
+               }
+               //生成停止尾部刷新状态序列
+               endFooterRefreshing = footerRefreshData.map{  (items, hasMore) in return hasMore }
          
         //下拉结果序列
-        let headerRefreshData = input.headerRefresh
-            .startWith(()) //初始化时会先自动加载一次数据
-            .flatMapLatest{ return dependency.networkService.getRandomResults() }
-         
-        //上拉结果序列
-        let footerRefreshData = input.footerRefresh
-            .flatMapLatest{ return dependency.networkService.getRandomResults() }
-         
-        //生成停止头部刷新状态序列
-        endHeaderRefreshing = headerRefreshData.map{ _ in true }
-         
-        //生成停止尾部刷新状态序列
-        endFooterRefreshing = footerRefreshData.map{ _ in true }
+        let headerRefreshData = input.headerRefresh.startWith(()).flatMapLatest { () -> Driver<([String], Bool)> in
+            PullToRefreshViewModel.page = 0
+            return dependency.networkService.getRandomResults(page: PullToRefreshViewModel.page)
+                
+        }
+         //生成停止头部刷新状态序列
+         endHeaderRefreshing = headerRefreshData.map{ (items, hasMore) in
+            return hasMore
+            
+        }
+
+       
+
+
         
-        //设置大于100没有更多
-       noMoreData = tableData.map {
-            $0.count > 20 ? true : false
-                  
-       }.asDriver(onErrorJustReturn: true)
+         
+        
+        
+    
         
         //下拉刷新时，直接将查 询到的结果替换原数据
-        headerRefreshData.drive(onNext: { items in
-            self.tableData.accept(items)
+        headerRefreshData.drive(onNext: { (items, hasMore) in
+            self.tableData!.accept(items)
+            self.hasMore!.accept(hasMore)
         }).disposed(by: dependency.disposeBag)
          
         //上拉加载时，将查询到的结果拼接到原数据底部
-    
-        
-        footerRefreshData.drive(onNext: { items in
-            self.tableData.accept(self.tableData.value + items )
+        footerRefreshData.drive(onNext: { (items, hasMore) in
+            self.tableData!.accept(self.tableData!.value + items )
+            self.hasMore!.accept(hasMore)
         }).disposed(by: dependency.disposeBag)
         
         
@@ -129,16 +141,16 @@ extension Reactive where Base: UIScrollView {
     }
     
     var stopLoadMore: Binder<Bool> {
-        return Binder(base) { scrollView, isEnd in
-            if isEnd {
+        return Binder(base) { scrollView, hasMore in
+            if hasMore {
                 scrollView.es.stopLoadingMore()
             }
         }
     }
     var noticeNoMoreData: Binder<Bool> {
-           return Binder(base) { scrollView, isEnd in
-               if isEnd {
-                scrollView.es.stopLoadingMore()
+           return Binder(base) { scrollView, hasMore in
+               if !hasMore {
+                scrollView.es.stopPullToRefresh()
                 scrollView.es.noticeNoMoreData()
                }
            }

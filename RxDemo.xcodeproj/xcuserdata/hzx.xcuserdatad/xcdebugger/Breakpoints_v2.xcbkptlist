@@ -23,15 +23,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1A1E6C06-7503-46F3-A9F3-7109ECF4B8C8"
+            uuid = "7DF30D48-7897-40FC-9186-C0646CF608C8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RxDemo/PullToRefresh.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
             landmarkName = "noticeNoMoreData"
             landmarkType = "24">
          </BreakpointContent>
@@ -39,8 +39,248 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "034824C3-281E-4959-939B-CF8DC8C7F954"
+            uuid = "0438A6CC-7CA0-40A1-93F7-B22B1B80E063"
             shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/RxDemo-defxfrpwlxslbiepjqfeoyqkjzvx/SourcePackages/checkouts/pull-to-refresh/Sources/Animator/ESRefreshFooterAnimator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "refreshAnimationEnd(view:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B8F5AAF-A6A5-4C89-BF39-A05DEAB6085B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/RxDemo-defxfrpwlxslbiepjqfeoyqkjzvx/SourcePackages/checkouts/pull-to-refresh/Sources/Animator/ESRefreshFooterAnimator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "refresh(view:stateDidChange:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A868FA1-F1FD-4F0C-9A18-4A7A7B608493"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/RxDemo-defxfrpwlxslbiepjqfeoyqkjzvx/SourcePackages/checkouts/pull-to-refresh/Sources/Animator/ESRefreshFooterAnimator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "refresh(view:stateDidChange:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7BC44ED6-E3E2-4578-AF8F-38A3EAEDB1D9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/RxDemo-defxfrpwlxslbiepjqfeoyqkjzvx/SourcePackages/checkouts/pull-to-refresh/Sources/ESPullToRefresh.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "noticeNoMoreData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA92A255-F5BF-47FB-98A5-6A7E8DE0F1F5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxDemo/PullToRefresh.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "loadMore"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D38519E-E921-409B-9EE6-CC188336CFC1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxDemo/PullToRefresh.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "loadMore"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "6D38519E-E921-409B-9EE6-CC188336CFC1 - 2465b434516d0ce0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in RxDemo):RxSwift.Reactive&lt;A where A: __C.UIScrollView&gt;.loadMore.getter : RxCocoa.ControlEvent&lt;()&gt;"
+                  moduleName = "RxDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hzx/huangzx/iOS_Project/RxDemo/RxDemo/PullToRefresh.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "29">
+               </Location>
+               <Location
+                  uuid = "6D38519E-E921-409B-9EE6-CC188336CFC1 - 985e541e775134ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;()&gt;) -&gt; RxSwift.Disposable in (extension in RxDemo):RxSwift.Reactive&lt;A where A: __C.UIScrollView&gt;.loadMore.getter : RxCocoa.ControlEvent&lt;()&gt;"
+                  moduleName = "RxDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hzx/huangzx/iOS_Project/RxDemo/RxDemo/PullToRefresh.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "154">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35274F41-8C90-4D5B-8618-764B2D90E1CE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxDemo/PullToRefresh.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "loadMore"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3A05CE6-20E5-4902-8205-44D9E2FEA2D3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxDemo/PullToRefresh.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "loadMore"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "D3A05CE6-20E5-4902-8205-44D9E2FEA2D3 - 2465b434516d0ce0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(extension in RxDemo):RxSwift.Reactive&lt;A where A: __C.UIScrollView&gt;.loadMore.getter : RxCocoa.ControlEvent&lt;()&gt;"
+                  moduleName = "RxDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hzx/huangzx/iOS_Project/RxDemo/RxDemo/PullToRefresh.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  uuid = "D3A05CE6-20E5-4902-8205-44D9E2FEA2D3 - 985e541e775134ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;()&gt;) -&gt; RxSwift.Disposable in (extension in RxDemo):RxSwift.Reactive&lt;A where A: __C.UIScrollView&gt;.loadMore.getter : RxCocoa.ControlEvent&lt;()&gt;"
+                  moduleName = "RxDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hzx/huangzx/iOS_Project/RxDemo/RxDemo/PullToRefresh.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "154">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBE7FA23-342E-4CBE-B2E6-1824EAC77811"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxDemo/PullToRefresh.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "loadMore"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "EBE7FA23-342E-4CBE-B2E6-1824EAC77811 - 985e541e775134ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;()&gt;) -&gt; RxSwift.Disposable in (extension in RxDemo):RxSwift.Reactive&lt;A where A: __C.UIScrollView&gt;.loadMore.getter : RxCocoa.ControlEvent&lt;()&gt;"
+                  moduleName = "RxDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hzx/huangzx/iOS_Project/RxDemo/RxDemo/PullToRefresh.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  uuid = "EBE7FA23-342E-4CBE-B2E6-1824EAC77811 - 985b615e8c79bc86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (RxSwift.AnyObserver&lt;()&gt;) -&gt; RxSwift.Disposable in (extension in RxDemo):RxSwift.Reactive&lt;A where A: __C.UIScrollView&gt;.loadMore.getter : RxCocoa.ControlEvent&lt;()&gt;"
+                  moduleName = "RxDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hzx/huangzx/iOS_Project/RxDemo/RxDemo/PullToRefresh.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12B2D127-6FCD-4BA5-B54E-38ADA0B2EDDB"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RxDemo/PullToRefresh.swift"
@@ -48,8 +288,72 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "134"
             endingLineNumber = "134"
-            landmarkName = "stopLoadMore"
+            landmarkName = "loadMore"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "12B2D127-6FCD-4BA5-B54E-38ADA0B2EDDB - 985e541e775134ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;()&gt;) -&gt; RxSwift.Disposable in (extension in RxDemo):RxSwift.Reactive&lt;A where A: __C.UIScrollView&gt;.loadMore.getter : RxCocoa.ControlEvent&lt;()&gt;"
+                  moduleName = "RxDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hzx/huangzx/iOS_Project/RxDemo/RxDemo/PullToRefresh.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  uuid = "12B2D127-6FCD-4BA5-B54E-38ADA0B2EDDB - 985b615e8c79bc86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (RxSwift.AnyObserver&lt;()&gt;) -&gt; RxSwift.Disposable in (extension in RxDemo):RxSwift.Reactive&lt;A where A: __C.UIScrollView&gt;.loadMore.getter : RxCocoa.ControlEvent&lt;()&gt;"
+                  moduleName = "RxDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hzx/huangzx/iOS_Project/RxDemo/RxDemo/PullToRefresh.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C6770FEB-369C-4635-ABF9-67FD2B1B8896"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/RxDemo-defxfrpwlxslbiepjqfeoyqkjzvx/SourcePackages/checkouts/pull-to-refresh/Sources/ESPullToRefresh.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "412"
+            endingLineNumber = "412"
+            landmarkName = "offsetChangeAction(object:change:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B771D2CE-5D55-4C9E-8B5C-841F175AD8EA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/RxDemo-defxfrpwlxslbiepjqfeoyqkjzvx/SourcePackages/checkouts/pull-to-refresh/Sources/ESPullToRefresh.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "415"
+            endingLineNumber = "415"
+            landmarkName = "offsetChangeAction(object:change:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
