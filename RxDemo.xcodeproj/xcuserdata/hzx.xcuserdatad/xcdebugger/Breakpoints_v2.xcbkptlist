@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "7DF30D48-7897-40FC-9186-C0646CF608C8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RxDemo/PullToRefresh.swift"
@@ -132,7 +132,7 @@
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "6D38519E-E921-409B-9EE6-CC188336CFC1 - 2465b434516d0ce0"
+                  uuid = "6D38519E-E921-409B-9EE6-CC188336CFC1 - bf8d34bcab6ccda6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -147,7 +147,7 @@
                   offsetFromSymbolStart = "29">
                </Location>
                <Location
-                  uuid = "6D38519E-E921-409B-9EE6-CC188336CFC1 - 985e541e775134ad"
+                  uuid = "6D38519E-E921-409B-9EE6-CC188336CFC1 - 3b6d4968d50f60a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -196,7 +196,7 @@
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "D3A05CE6-20E5-4902-8205-44D9E2FEA2D3 - 2465b434516d0ce0"
+                  uuid = "D3A05CE6-20E5-4902-8205-44D9E2FEA2D3 - bf8d34bcab6cce47"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -211,7 +211,7 @@
                   offsetFromSymbolStart = "95">
                </Location>
                <Location
-                  uuid = "D3A05CE6-20E5-4902-8205-44D9E2FEA2D3 - 985e541e775134ad"
+                  uuid = "D3A05CE6-20E5-4902-8205-44D9E2FEA2D3 - 3b6d4968d50f60a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -244,7 +244,7 @@
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "EBE7FA23-342E-4CBE-B2E6-1824EAC77811 - 985e541e775134ad"
+                  uuid = "EBE7FA23-342E-4CBE-B2E6-1824EAC77811 - 3b6d4968d50f667"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -259,7 +259,7 @@
                   offsetFromSymbolStart = "276">
                </Location>
                <Location
-                  uuid = "EBE7FA23-342E-4CBE-B2E6-1824EAC77811 - 985b615e8c79bc86"
+                  uuid = "EBE7FA23-342E-4CBE-B2E6-1824EAC77811 - 3b3e1d676787ead"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -292,7 +292,7 @@
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "12B2D127-6FCD-4BA5-B54E-38ADA0B2EDDB - 985e541e775134ad"
+                  uuid = "12B2D127-6FCD-4BA5-B54E-38ADA0B2EDDB - 3b6d4968d50f667"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -307,7 +307,7 @@
                   offsetFromSymbolStart = "276">
                </Location>
                <Location
-                  uuid = "12B2D127-6FCD-4BA5-B54E-38ADA0B2EDDB - 985b615e8c79bc86"
+                  uuid = "12B2D127-6FCD-4BA5-B54E-38ADA0B2EDDB - 3b3e1d676787ead"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -353,6 +353,54 @@
             startingLineNumber = "415"
             endingLineNumber = "415"
             landmarkName = "offsetChangeAction(object:change:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF1668FB-CF75-40A3-ADAE-99E6E6E706F3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxDemo/RxMoya/SMProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "rxRequest(_:callbackQueue:progress:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE39BD84-E69A-435C-BC02-B161A4D863F7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxDemo/RxMoya/SMProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "rxRequest(_:callbackQueue:progress:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77109CC6-415B-423B-8E6B-48F626E42B4C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RxDemo/RxMoya/SMPlugin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "process(_:target:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

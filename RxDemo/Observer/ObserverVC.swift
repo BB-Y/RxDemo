@@ -61,14 +61,14 @@ class ObserverVC: UIViewController {
         _ = signalData.emit(to: signalLabel.rx.text)
         
         //Observable序列可以选线程
-        Observable<Int>.timer(RxTimeInterval.seconds(0), period: RxTimeInterval.seconds(2), scheduler: MainScheduler.instance)
+        _ = Observable<Int>.timer(RxTimeInterval.seconds(0), period: RxTimeInterval.seconds(2), scheduler: MainScheduler.instance)
         
         //Driver 和Signal默认在主线程，不需要设置scheduler
         let time = Signal<Int>.timer(RxTimeInterval.seconds(1), period: RxTimeInterval.seconds(2)).map { (time) in
             return "time = \(time)"
         }
         
-        time.emit(to: signalLabel.rx.text)
+        _ = time.emit(to: signalLabel.rx.text)
       
         
     }

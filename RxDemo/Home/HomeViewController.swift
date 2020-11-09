@@ -21,7 +21,8 @@ class HomeViewController: UIViewController {
     let dataSource: Array<[String: String]> =
         [["观察者": "ObserverVC"],
          ["Rx扩展": "CustomRxExtensionsVC"],
-         ["下拉刷新": "PullToRefreshVC"]]
+         ["下拉刷新": "PullToRefreshVC"],
+         ["RxMoya使用": "RxMoyaVC"]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +43,7 @@ class HomeViewController: UIViewController {
                 let vc = sb.instantiateViewController(identifier: model.values.first!)
                 self.navigationController?.pushViewController(vc, animated: true)
         })
+        
         
     }
 
