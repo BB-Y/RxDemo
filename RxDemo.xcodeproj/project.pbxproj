@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7139DA4F92D83F0E3F5EFEF0 /* Pods_RxDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089C53265AF0757CB74F10BB /* Pods_RxDemo.framework */; };
 		78A039AF2557BA0700C6CAF6 /* CustomRxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A039AE2557BA0700C6CAF6 /* CustomRxExtensions.swift */; };
 		78B6C98E25577FCC00600F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B6C98D25577FCC00600F1F /* AppDelegate.swift */; };
 		78B6C99025577FCC00600F1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B6C98F25577FCC00600F1F /* SceneDelegate.swift */; };
@@ -14,18 +15,7 @@
 		78B6C99525577FCC00600F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B6C99325577FCC00600F1F /* Main.storyboard */; };
 		78B6C99725577FCD00600F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B6C99625577FCD00600F1F /* Assets.xcassets */; };
 		78B6C99A25577FCD00600F1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B6C99825577FCD00600F1F /* LaunchScreen.storyboard */; };
-		78B6C9B52557870600600F1F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 78B6C9B42557870600600F1F /* RxSwift */; };
-		78B6C9B92557870600600F1F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 78B6C9B82557870600600F1F /* RxRelay */; };
-		78B6C9BB2557870600600F1F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 78B6C9BA2557870600600F1F /* RxCocoa */; };
-		78B6C9C02557876200600F1F /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = 78B6C9BF2557876200600F1F /* RxGesture */; };
-		78B6C9C3255788A300600F1F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 78B6C9C2255788A300600F1F /* SDWebImage */; };
-		78B6C9C5255788A300600F1F /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 78B6C9C4255788A300600F1F /* SDWebImageMapKit */; };
-		78B6C9C8255789EA00600F1F /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 78B6C9C7255789EA00600F1F /* Moya */; };
-		78B6C9CA255789EA00600F1F /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 78B6C9C9255789EA00600F1F /* ReactiveMoya */; };
-		78B6C9CC255789EA00600F1F /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 78B6C9CB255789EA00600F1F /* RxMoya */; };
 		78B6C9CE255798F900600F1F /* ObserverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B6C9CD255798F900600F1F /* ObserverVC.swift */; };
-		78BEA2D325579D1B00619047 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 78BEA2D225579D1B00619047 /* SnapKit */; };
-		78C8965D2557C6570068CB35 /* ESPullToRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 78C8965C2557C6570068CB35 /* ESPullToRefresh */; };
 		78C8965F255808010068CB35 /* PullToRefreshVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8965E255808010068CB35 /* PullToRefreshVC.swift */; };
 		78F33EE02558E18C00E44FA5 /* SMNetTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F33EDF2558E18C00E44FA5 /* SMNetTargetType.swift */; };
 		78F33EE42558E2D900E44FA5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F33EE32558E2D900E44FA5 /* NetworkService.swift */; };
@@ -38,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		089C53265AF0757CB74F10BB /* Pods_RxDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A039AE2557BA0700C6CAF6 /* CustomRxExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRxExtensions.swift; sourceTree = "<group>"; };
 		78B6C98A25577FCC00600F1F /* RxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B6C98D25577FCC00600F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +48,8 @@
 		78F33EF12558E55600E44FA5 /* SMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMProvider.swift; sourceTree = "<group>"; };
 		78F33EF42558EF8A00E44FA5 /* RxMoyaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMoyaVC.swift; sourceTree = "<group>"; };
 		78F33EF72559017700E44FA5 /* SMPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMPlugin.swift; sourceTree = "<group>"; };
+		9C043906D29ECBF3EDE2BB1E /* Pods-RxDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxDemo.release.xcconfig"; path = "Target Support Files/Pods-RxDemo/Pods-RxDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D0FB427733C72DF660246E64 /* Pods-RxDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxDemo.debug.xcconfig"; path = "Target Support Files/Pods-RxDemo/Pods-RxDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,28 +57,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78B6C9B92557870600600F1F /* RxRelay in Frameworks */,
-				78C8965D2557C6570068CB35 /* ESPullToRefresh in Frameworks */,
-				78B6C9C8255789EA00600F1F /* Moya in Frameworks */,
-				78B6C9CC255789EA00600F1F /* RxMoya in Frameworks */,
-				78B6C9CA255789EA00600F1F /* ReactiveMoya in Frameworks */,
-				78B6C9BB2557870600600F1F /* RxCocoa in Frameworks */,
-				78B6C9C3255788A300600F1F /* SDWebImage in Frameworks */,
-				78B6C9B52557870600600F1F /* RxSwift in Frameworks */,
-				78B6C9C02557876200600F1F /* RxGesture in Frameworks */,
-				78BEA2D325579D1B00619047 /* SnapKit in Frameworks */,
-				78B6C9C5255788A300600F1F /* SDWebImageMapKit in Frameworks */,
+				7139DA4F92D83F0E3F5EFEF0 /* Pods_RxDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38C5AF7127F2EF5B15A22489 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0FB427733C72DF660246E64 /* Pods-RxDemo.debug.xcconfig */,
+				9C043906D29ECBF3EDE2BB1E /* Pods-RxDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		78B6C98125577FCC00600F1F = {
 			isa = PBXGroup;
 			children = (
 				78B6C98C25577FCC00600F1F /* RxDemo */,
 				78B6C98B25577FCC00600F1F /* Products */,
+				38C5AF7127F2EF5B15A22489 /* Pods */,
+				A7C59440132794A8706502FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +165,14 @@
 			path = NetWork;
 			sourceTree = "<group>";
 		};
+		A7C59440132794A8706502FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C53265AF0757CB74F10BB /* Pods_RxDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,28 +180,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78B6C99E25577FCD00600F1F /* Build configuration list for PBXNativeTarget "RxDemo" */;
 			buildPhases = (
+				120B9D759C040EB8600475A0 /* [CP] Check Pods Manifest.lock */,
 				78B6C98625577FCC00600F1F /* Sources */,
 				78B6C98725577FCC00600F1F /* Frameworks */,
 				78B6C98825577FCC00600F1F /* Resources */,
+				792BB2C768AA32CD0E62535E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = RxDemo;
-			packageProductDependencies = (
-				78B6C9B42557870600600F1F /* RxSwift */,
-				78B6C9B82557870600600F1F /* RxRelay */,
-				78B6C9BA2557870600600F1F /* RxCocoa */,
-				78B6C9BF2557876200600F1F /* RxGesture */,
-				78B6C9C2255788A300600F1F /* SDWebImage */,
-				78B6C9C4255788A300600F1F /* SDWebImageMapKit */,
-				78B6C9C7255789EA00600F1F /* Moya */,
-				78B6C9C9255789EA00600F1F /* ReactiveMoya */,
-				78B6C9CB255789EA00600F1F /* RxMoya */,
-				78BEA2D225579D1B00619047 /* SnapKit */,
-				78C8965C2557C6570068CB35 /* ESPullToRefresh */,
-			);
 			productName = RxDemo;
 			productReference = 78B6C98A25577FCC00600F1F /* RxDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -227,14 +219,6 @@
 				Base,
 			);
 			mainGroup = 78B6C98125577FCC00600F1F;
-			packageReferences = (
-				78B6C9B32557870600600F1F /* XCRemoteSwiftPackageReference "RxSwift" */,
-				78B6C9BE2557876200600F1F /* XCRemoteSwiftPackageReference "RxGesture" */,
-				78B6C9C1255788A300600F1F /* XCRemoteSwiftPackageReference "SDWebImage" */,
-				78B6C9C6255789EA00600F1F /* XCRemoteSwiftPackageReference "Moya" */,
-				78BEA2D125579D1B00619047 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				78C8965B2557C6570068CB35 /* XCRemoteSwiftPackageReference "pull-to-refresh" */,
-			);
 			productRefGroup = 78B6C98B25577FCC00600F1F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -256,6 +240,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		120B9D759C040EB8600475A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		792BB2C768AA32CD0E62535E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxDemo/Pods-RxDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxDemo/Pods-RxDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxDemo/Pods-RxDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78B6C98625577FCC00600F1F /* Sources */ = {
@@ -419,6 +445,7 @@
 		};
 		78B6C99F25577FCD00600F1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0FB427733C72DF660246E64 /* Pods-RxDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,6 +464,7 @@
 		};
 		78B6C9A025577FCD00600F1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C043906D29ECBF3EDE2BB1E /* Pods-RxDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -475,115 +503,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		78B6C9B32557870600600F1F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.1;
-			};
-		};
-		78B6C9BE2557876200600F1F /* XCRemoteSwiftPackageReference "RxGesture" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:RxSwiftCommunity/RxGesture.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.3;
-			};
-		};
-		78B6C9C1255788A300600F1F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.9.4;
-			};
-		};
-		78B6C9C6255789EA00600F1F /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 14.0.0;
-			};
-		};
-		78BEA2D125579D1B00619047 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
-		78C8965B2557C6570068CB35 /* XCRemoteSwiftPackageReference "pull-to-refresh" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/eggswift/pull-to-refresh";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.9.3;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		78B6C9B42557870600600F1F /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 78B6C9B32557870600600F1F /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		78B6C9B82557870600600F1F /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 78B6C9B32557870600600F1F /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		78B6C9BA2557870600600F1F /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 78B6C9B32557870600600F1F /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		78B6C9BF2557876200600F1F /* RxGesture */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 78B6C9BE2557876200600F1F /* XCRemoteSwiftPackageReference "RxGesture" */;
-			productName = RxGesture;
-		};
-		78B6C9C2255788A300600F1F /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 78B6C9C1255788A300600F1F /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-		78B6C9C4255788A300600F1F /* SDWebImageMapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 78B6C9C1255788A300600F1F /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImageMapKit;
-		};
-		78B6C9C7255789EA00600F1F /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 78B6C9C6255789EA00600F1F /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
-		};
-		78B6C9C9255789EA00600F1F /* ReactiveMoya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 78B6C9C6255789EA00600F1F /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = ReactiveMoya;
-		};
-		78B6C9CB255789EA00600F1F /* RxMoya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 78B6C9C6255789EA00600F1F /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = RxMoya;
-		};
-		78BEA2D225579D1B00619047 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 78BEA2D125579D1B00619047 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		78C8965C2557C6570068CB35 /* ESPullToRefresh */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 78C8965B2557C6570068CB35 /* XCRemoteSwiftPackageReference "pull-to-refresh" */;
-			productName = ESPullToRefresh;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 78B6C98225577FCC00600F1F /* Project object */;
 }

@@ -8,7 +8,6 @@
 
 @_exported import UIKit
 @_exported import RxSwift
-@_exported import RxMoya
 @_exported import Moya
 @_exported import RxCocoa
 @_exported import SnapKit

@@ -35,10 +35,10 @@ class RxMoyaVC: UIViewController {
         let endHeaderRefreshing: Driver<Bool>? = tableData.map { _ in
             return true
         }
-        _ = tableData.drive(tableView.rx.items){ (tableView, row, element: String) in
-            let cell = tableView.dequeueReusableCell(withIdentifier: "rxCell")!
+        _ = tableData.drive(tableView.rx.items(cellIdentifier: "rxCell", cellType: UITableViewCell.self)) { (row, element:String, cell) in
+           
             cell.textLabel?.text = "\(row+1)、\(element)"
-            return cell
+            //return cell
         }
        
         endHeaderRefreshing!

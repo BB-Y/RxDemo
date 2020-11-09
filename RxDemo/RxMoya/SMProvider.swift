@@ -46,7 +46,7 @@ class SMNetProvider<T: TargetType>: MoyaProvider<T> {
     //初始化时，设置自定义Provider
     override init(endpointClosure: @escaping MoyaProvider<T>.EndpointClosure = customEndpointClosure,
                   requestClosure: @escaping MoyaProvider<T>.RequestClosure = MoyaProvider<T>.defaultRequestMapping,
-                  stubClosure: @escaping MoyaProvider<T>.StubClosure = MoyaProvider.delayedStub(3),
+                  stubClosure: @escaping MoyaProvider<T>.StubClosure = MoyaProvider<T>.delayedStub(0),
                   callbackQueue: DispatchQueue? = nil,
                   session: Session = defaultSMSession(),
                   plugins: [PluginType] = [SMErrorPlugin()],
@@ -68,10 +68,13 @@ class SMNetProvider<T: TargetType>: MoyaProvider<T> {
         
         
         let result = self.rx.request(target, callbackQueue: callbackQueue)
+        
+        
             //.asDriver(onErrorJustReturn: Response(statusCode: 404, data: "".data(using: .utf8)!))
         
         //var res = BehaviorRelay<Moya.Response>(value: Moya.Response(statusCode: 0, data: "[]".data(using: .utf8)!))
         let res = BehaviorRelay<Moya.Response>(value: Moya.Response(statusCode: 0, data: "[]".data(using: .utf8)!))
+        sleep(2)
         result.subscribe { (response) in
             res.accept(response)
         } onError: { (error) in
